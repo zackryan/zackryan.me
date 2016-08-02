@@ -1,10 +1,14 @@
 import React from 'react';
+import NavigationBar from './NavigationBar';
 
 
 class App extends React.Component {
   render(){
     return(
-      <h1> Hello World from React </h1>
+      <div className= "container">
+        <NavigationBar />
+        {this.props.children}
+      </div>
     );
   }
 }
