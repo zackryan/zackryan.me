@@ -7,6 +7,8 @@ import {createStore, applyMiddleware} from 'redux';
 
 import routes from './routes';
 
+
+
 const store= createStore(
   (state={})=> state,
   applyMiddleware(thunk)
